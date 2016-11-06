@@ -11,7 +11,17 @@ div.text {
     text-align: center;
     font-size: 185%;
     transition: 1.0s;
+}
+div.num {
+    max-height: 200px;
+    min-height: 100px;
 
+}
+div.bottom{
+    position : absolute;
+    bottom : 0;
+    height : 40px;
+    margin-top : 40px;
 }
 div.bold {
     font-weight: bold;
