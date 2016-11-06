@@ -1,0 +1,18 @@
+body {
+    background: lightcoral;
+}
+div {
+    min-width: 500px;
+min-height: 400px;
+background: lightcoral;
+text-decoration: none;
+}
+div.text {
+    text-align: center;
+    font-size: 185%;
+    transition: 1.0s;
+
+}
+div.bold {
+    font-weight: bold;
+}
