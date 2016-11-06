@@ -1,28 +1,31 @@
-body {
-    background: lightcoral;
-}
-div {
-    min-width: 500px;
-min-height: 400px;
-background: lightcoral;
-text-decoration: none;
-}
-div.text {
-    text-align: center;
-    font-size: 185%;
-    transition: 1.0s;
-}
-div.num {
-    max-height: 200px;
+    body {
+        background: lightcoral;
+    }
+    div {
+        min-width: 500px;
     min-height: 100px;
+    background: lightcoral;
+    text-decoration: none;
+    }
+    div.main {
+        padding-top:100px;
+    }
+    div.text {
+        text-align: center;
+        font-size: 185%;
+        transition: 1.0s;
+    }
+    div.num {
+        max-height: 200px;
+        min-height: 100px;
 
-}
-div.bottom{
-    position : absolute;
-    bottom : 0;
-    height : 40px;
-    margin-top : 40px;
-}
-div.bold {
-    font-weight: bold;
-}
+    }
+    div.bottom{
+        text-align: center;
+        font-size: 185%;
+        transition: 1.0s;
+        padding: 0%;
+    }
+    div.bold {
+        font-weight: bold;
+    }
