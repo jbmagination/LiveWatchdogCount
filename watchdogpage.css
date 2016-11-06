@@ -1,31 +1,40 @@
-    body {
-        background: lightcoral;
-    }
-    div {
-        min-width: 500px;
-    min-height: 100px;
+* {
+	text-align: center;
+	font-size: 20px;
+}
+
+body {
+    background: lightcoral;
+	padding-top: 100px;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #dfdfdf;
+}
+
+div {
+    min-width: 500px;
+    min-height: 250px;
     background: lightcoral;
     text-decoration: none;
-    }
-    div.main {
-        padding-top:100px;
-    }
-    div.text {
-        text-align: center;
-        font-size: 185%;
-        transition: 1.0s;
-    }
-    div.num {
-        max-height: 200px;
-        min-height: 100px;
+}
 
-    }
-    div.bottom{
-        text-align: center;
-        font-size: 185%;
-        transition: 1.0s;
-        padding: 0%;
-    }
-    div.bold {
-        font-weight: bold;
-    }
+div.num {
+    max-height: 200px;
+    min-height: 100px;
+}
+
+div.bold {
+    font-weight: bold;
+}
+
+div.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	font-size: 185%;
+}
