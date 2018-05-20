@@ -41,7 +41,7 @@
                     }
                 }, 2000 / Math.abs(last - currentVal));
                 last = endVal;
-                document.getElementById("number").innerHTML = "Total bans: " + response.watchdog_total + "<br>Last 60 seconds: " + response.watchdog_lastMinute;
+                document.getElementById("number").innerHTML = "Total bans: " + response.record.watchdog_total + "<br>Last 60 seconds: " + response.watchdog_lastMinute;
             }
         });
     }
