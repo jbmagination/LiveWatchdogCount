@@ -14,6 +14,7 @@
             dataType: "json",
             url: "https://api.plancke.io/watchdogStats",
             success: function(response) {
+		    console.log(response);
                 if (last === 0) {
                     last = response.count;
                 }
