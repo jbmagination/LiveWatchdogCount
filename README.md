@@ -3,6 +3,9 @@
 Working on patches.
 
 Web: https://jbmagination.github.io/watchdog
+
 Windows: soon
+
 Mac: soon
+
 Linux: soon
