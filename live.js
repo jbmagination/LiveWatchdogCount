@@ -12,7 +12,7 @@
 		}
         $.ajax({
             dataType: "json",
-            url: "http://watchdog.cryptkpr.me:4567/current",
+            url: "https://api.plancke.io/watchdogStats",
             success: function(response) {
                 if (last === 0) {
                     last = response.count;
