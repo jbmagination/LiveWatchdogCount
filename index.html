@@ -5,8 +5,8 @@
         <title>Hypixel Watchdog Live Ban Count</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="https://jbmagination.github.io/watchdog/watchdogpage.css?d=1">
-        <script src="https://jbmagination.github.io/watchdog/live.js?d=1"></script>
+        <link rel="stylesheet" type="text/css" href="https://jbmagination.github.io/watchdog/watchdogpage.css">
+        <script src="https://jbmagination.github.io/watchdog/live.js"></script>
     </head>
     <body>
         <div class="main">
@@ -19,43 +19,6 @@
                 <p class="bold">
                     Updates every 5 seconds.<br>
                     <br>
-<button type="button" id="update"class="btn btn-outline-primary">Update</button>
-<script>
-$('update').on('click', function (e) {
-$.ajax({
-            dataType: "json",
-            url: "https://api.plancke.io/watchdogStats",
-            success: function(response) {
-                if (last === 0) {
-                    last = response.record.watchdog_total;
-                }
-                var $start = $('#start'), start = last, $reset = $('#reset'), reset = $reset.get(0), $counter = $('#counter'), startVal = last, currentVal, endVal = response.total, prefix = 'Players: ', fontSize = $counter.css('font-size');
-                currentVal = startVal;
-                var i = setInterval(function() {
-                    if (currentVal === response.record.watchdog_total) {
-                        clearInterval(i);
-                        $counter.text(prefix + currentVal);
-                    } else if (currentVal < response.record.watchdog_total) {
-                        if (response - last < 1000) {
-                            currentVal += Math.abs(response - last) / 1000;
-                        } else {
-                            currentVal++;
-                        }
-                        $counter.text(prefix + currentVal);
-                    } else {
-                        if (last - response > 1000) {
-                            currentVal -= Math.abs(response - last) / 1000;
-                        } else {
-                            currentVal--;
-                        }
-                        $counter.text(prefix + currentVal);
-                    }
-                }, 2000 / Math.abs(last - currentVal));
-                last = endVal;
-                document.getElementById("number").innerHTML = "Total bans: " + response.record.watchdog_total + "<br>Last 60 seconds: " + response.record.watchdog_lastMinute;
-            }
-})
-		    </script>
                     <strong>
                         I am in no way the creator of Watchdog,<br>
                         I did not learn anything about how it works from this.<br>This is just a tool.
