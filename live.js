@@ -2,7 +2,7 @@
  * Created by Mitchell Katz on 11/6/2016.
  */
 (function() {
-    var updateRate = 0.000000000000000001 * 1000;
+    var updateRate = 1 * 1000;
     var logged = false;
     var last = 0;
     function update() {
