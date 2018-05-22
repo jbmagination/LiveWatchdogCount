@@ -7,7 +7,7 @@
     var last = 0;
     function update() {
         if (!logged) {
-            console.log("Dude its updating, you hyped. Maybe in 100k runs the veteran reward update will come out");
+            console.log("Updating...");
 			logged = !logged;
 		}
         $.ajax({
